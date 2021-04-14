@@ -1,4 +1,4 @@
-import Maquina
+from Maquina import Maquina
 
 
 class MaquinaElectrica(Maquina):
@@ -11,8 +11,8 @@ class MaquinaElectrica(Maquina):
 
     def __init__(self, marca: str, modelo: str, voltaje=None, potenciaElectrica=None):
         super().__init(marca, modelo)
-        self._voltaje: int = MaquinaElectrica.MIN_VOLTAJE if voltaje is not None else voltaje
-        self._potenciaElectrica: float = MaquinaElectrica.MIN_POTENCIA_ELECTRICA if potenciaElectrica is not None else potenciaElectrica
+        self._voltaje: int = MaquinaElectrica.DEFAULT_VOLTAJE if voltaje is not None else voltaje
+        self._potenciaElectrica: float = MaquinaElectrica.DEFAULT_POTENCIA_ELECTRICA if potenciaElectrica is not None else potenciaElectrica
 
 
     def getVoltaje(self):
