@@ -14,5 +14,5 @@ class MaquinaMecanica(Maquina):
     @property
     def __str__(self) -> str:
         tmp_str = super().__str__()
-        tmp_str = tmp_str[:-1] + f" Fuerza Motriz: {self._fuerzaMotriz.Combustible.name};"
+        tmp_str = tmp_str[:-1] + f" fuerza motriz:{self._fuerzaMotriz.Combustible.name} }}"
         return tmp_str

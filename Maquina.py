@@ -19,5 +19,5 @@ class Maquina(object):
         return Maquina.__cantidadDeMaquinasFabricadas
 
     def __str__(self) -> str:
-        tmp_str = f"Marca: {self._marca}; Modelo: {self._modelo}; NS: {self._numeroSerie}; "
+        tmp_str = f"{{ Marca: {self._marca}; modelo: {self._modelo}; NS: {self._numeroSerie} }}"
         return tmp_str

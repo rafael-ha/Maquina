@@ -2,6 +2,7 @@
 
 # Press Mayús+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from Bicicleta import Bicicleta
 from Maquina import Maquina
 from MaquinaMecanica import MaquinaMecanica
 #from MaquinaElectrica import MaquinaElectrica
@@ -14,10 +15,8 @@ def print_hi(name):
 def main():
     m1=Maquina("test", "test2")
     print(m1)
-
-    m2=MaquinaMecanica("teest","tests")
-    print(m2)
-
+    b1 = Bicicleta("1","232",None)
+    print(b1)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

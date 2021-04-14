@@ -24,5 +24,5 @@ class MaquinaElectrica(Maquina):
 
     def __str__(self) -> str:
         tmp_str = super().__str__()
-        tmp_str = tmp_str[:-1] + f" Voltaje: {self._voltaje}; Potencia: {self._potenciaElectrica};"
+        tmp_str = tmp_str[:-1] + f" Voltaje:{self._voltaje} v; Potencia Eléctrica: {self._potenciaElectrica} kw }}"
         return tmp_str
